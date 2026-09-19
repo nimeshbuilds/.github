@@ -1,8 +1,8 @@
 # ClusterReplica
 
-**A proposed Kubernetes operator for reproducible, ephemeral development environments built on vCluster.**
+**An experimental Kubernetes operator for reproducible development environments built on vCluster.**
 
-Status: **design and validation**. No operator, CLI, chart, or compatibility certification is released.
+Status: **early runtime prototype**. [Explore the code and quickstart](https://github.com/nimeshbuilds/cluster-replica). The initial operator provisions a pinned vCluster and manages limited Helm-release TTL cleanup. Automatic host replication, complete cleanup, production releases, and compatibility certification are still ahead.
 
 ## The problem
 

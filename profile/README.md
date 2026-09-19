@@ -16,7 +16,7 @@ I'm [Nimesh](https://github.com/npandeya). Nimesh Builds is where I build useful
 
 Integration tests need more than an empty cluster. They need the operators, configuration, and dependencies your application actually uses.
 
-ClusterReplica is a planned Kubernetes operator that wraps [vCluster](https://www.vcluster.com/) to make that setup easier. The goal: request a development cluster with one custom resource, select what to reproduce from the host, customize it, and let it expire when the work is done.
+ClusterReplica is an experimental Kubernetes operator that wraps [vCluster](https://www.vcluster.com/) to make that setup easier. The goal: request a development cluster with one custom resource, select what to reproduce from the host, customize it, and let it expire when the work is done.
 
 The proposed workflow covers:
 
@@ -25,9 +25,9 @@ The proposed workflow covers:
 - **Connect:** provide scoped access for developers, CI jobs, and agents.
 - **Clean up:** expire the environment with a TTL and track deletion of owned resources.
 
-**Status: design and validation.** There is no released operator, installation command, or certified compatibility matrix yet. Kubernetes versions and required capabilities will determine support; cloud identity, storage, secrets, and operator behavior need explicit validation.
+**Status: early runtime prototype.** The [public repository](https://github.com/nimeshbuilds/cluster-replica) contains a Go operator, namespaced CRD, pinned vCluster Helm adapter, TTL release cleanup, tests, and the full implementation plan. Automatic host toolset replication and complete owned-data cleanup are upcoming. There is no production release or certified compatibility matrix yet.
 
-→ [Read the project brief](https://github.com/nimeshbuilds/.github/blob/main/projects/cluster-replica.md) · [Share your cluster-testing pain points](https://github.com/nimeshbuilds/.github/discussions/categories/ideas)
+→ [Explore the code](https://github.com/nimeshbuilds/cluster-replica) · [Read the project brief](https://github.com/nimeshbuilds/.github/blob/main/projects/cluster-replica.md) · [Share your cluster-testing pain points](https://github.com/nimeshbuilds/.github/discussions/categories/ideas)
 
 ## What you'll find here
 

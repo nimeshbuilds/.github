@@ -2,7 +2,7 @@
 
 This roadmap records direction, not release dates. Status reflects work with visible evidence; an idea is not a shipped feature.
 
-## Now · Design and validation
+## Now · Prototype and live validation
 
 **ClusterReplica:** make it easier to create a selected replica of a Kubernetes software environment inside a vCluster for development and integration tests.
 
@@ -11,7 +11,7 @@ This roadmap records direction, not release dates. Status reflects work with vis
 - Define the initial Kubernetes/vCluster version pair and required capabilities.
 - Identify which configuration can be reproduced and which dependencies need explicit adapters or manual setup.
 
-The project is being planned. No implementation or compatibility result has been published yet.
+The [initial implementation](https://github.com/nimeshbuilds/cluster-replica) is public. It includes a namespaced CRD, standalone vCluster Helm provisioning, runtime status, limited TTL cleanup, and chart/API-server tests. A live host-and-guest workflow and automatic toolset replication remain the next milestones. See the [project issues](https://github.com/nimeshbuilds/cluster-replica/issues) for acceptance criteria.
 
 ## Next · A usable first slice
 
