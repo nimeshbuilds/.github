@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+<title id="title">Nimesh Builds</title><desc id="desc">Vibe coding. Open source. Built in public. Kubernetes, AI agents, and developer tools.</desc>
+<defs>
+  <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#203047" stroke-width="1"/></pattern>
+</defs>
+<rect width="1280" height="400" rx="24" fill="#0C121C"/>
+<rect x="850" width="430" height="400" fill="url(#grid)" opacity=".48"/>
+<path d="M0 398H1280" stroke="#26344A" stroke-width="4"/>
+<path d="M64 398H277" stroke="#FFC342" stroke-width="4"/>
+<g transform="translate(60 57) scale(0.94)">
+    <path d="M10 50 58 23 105 48 58 75Z" fill="#48A6FF"/>
+    <path d="M10 50 58 75 58 257 10 230Z" fill="#2558EE"/>
+    <path d="M58 75 105 48 105 230 58 257Z" fill="#1945C7"/>
+    <path d="M161 86 204 61 250 87 206 112Z" fill="#42ECC1"/>
+    <path d="M161 86 206 112 206 268 161 242Z" fill="#12B992"/>
+    <path d="M206 112 250 87 250 242 206 268Z" fill="#087F70"/>
+    <path d="M58 75 105 48 206 182 161 211Z" fill="#FFC72F"/>
+    <path d="M58 75 161 211 206 268 206 216 105 80Z" fill="#FF9D1B"/>
+    <path d="M161 211 206 182 206 216 206 268Z" fill="#F6B720"/>
+    <path d="M238 0C242 23 248 30 272 36C248 42 242 49 238 72C233 49 227 42 204 36C227 30 233 23 238 0Z" fill="#FFC342"/>
+  </g>
+<g font-family="Arial, Helvetica, sans-serif">
+  <text x="370" y="96" fill="#42D5B3" font-size="14" font-weight="700" letter-spacing="3.2">IDEAS → EXPERIMENTS → USEFUL TOOLS</text>
+  <text x="364" y="179" fill="#F2F6FC" font-size="68" font-weight="800" letter-spacing="-2">NIMESH BUILDS</text>
+  <text x="369" y="230" fill="#C6D3E5" font-size="27">Vibe coding. Open source. Built in public.</text>
+  <path d="M370 268H1166" stroke="#26364B"/>
+  <text x="370" y="313" fill="#91A7C5" font-size="18">KUBERNETES</text>
+  <circle cx="545" cy="307" r="3" fill="#FFC342"/>
+  <text x="573" y="313" fill="#91A7C5" font-size="18">AI AGENTS</text>
+  <circle cx="724" cy="307" r="3" fill="#FFC342"/>
+  <text x="752" y="313" fill="#91A7C5" font-size="18">DEVELOPER TOOLS</text>
+</g>
+</svg>

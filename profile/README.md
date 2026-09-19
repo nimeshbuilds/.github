@@ -1,27 +1,50 @@
-<div align="center">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nimeshbuilds/.github/main/assets/banner.png" alt="Nimesh Builds — Vibe coding. Open source. Built in public." width="100%">
+</p>
 
-# Nimesh Builds
+# Open-source Kubernetes tools, AI agents & developer automation
 
-**Vibe coding. Open source. Built in public.**
+**Less setup. More building.**
 
-Useful tools, ambitious experiments, and the lessons along the way.
+I'm [Nimesh](https://github.com/npandeya). Nimesh Builds is where I build useful developer tools with AI and share the work in public: the design decisions, experiments, working demos, and lessons along the way.
 
-</div>
+[Explore the roadmap](https://github.com/nimeshbuilds/.github/blob/main/ROADMAP.md) · [Join the community](https://github.com/orgs/nimeshbuilds/discussions) · [Contribute](https://github.com/nimeshbuilds/.github/blob/main/CONTRIBUTING.md)
 
-I'm [Nimesh](https://github.com/npandeya). This is where I build open-source software with AI and share how it takes shape: the ideas, design decisions, experiments, and improvements.
+## First project: ClusterReplica
 
-The focus:
+**Recreate the Kubernetes toolset you need in an ephemeral vCluster.**
 
-- **Kubernetes and infrastructure:** tools that make development environments easier to create and use.
-- **Agents and automation:** practical ways to make software do more of the work.
-- **Developer tools:** small improvements that remove everyday friction.
+Integration tests need more than an empty cluster. They need the operators, configuration, and dependencies your application actually uses.
 
-### On the workbench
+ClusterReplica is a planned Kubernetes operator that wraps [vCluster](https://www.vcluster.com/) to make that setup easier. The goal: request a development cluster with one custom resource, select what to reproduce from the host, customize it, and let it expire when the work is done.
 
-**ClusterReplica — in planning.** A Kubernetes operator that uses vCluster to recreate a selected cluster toolset for development and integration testing, with configuration overrides, access for people and agents, and expiration with owned-resource cleanup.
+The proposed workflow covers:
 
-The architecture and implementation roadmap are being developed. There is no released operator yet.
+- **Provision:** create a vCluster or use an explicitly selected existing one.
+- **Reproduce:** install supported operators and selected configuration, with overrides.
+- **Connect:** provide scoped access for developers, CI jobs, and agents.
+- **Clean up:** expire the environment with a TTL and track deletion of owned resources.
 
-### Build along
+**Status: design and validation.** There is no released operator, installation command, or certified compatibility matrix yet. Kubernetes versions and required capabilities will determine support; cloud identity, storage, secrets, and operator behavior need explicit validation.
 
-As projects land, their repositories will hold the code, decisions, and open questions. Ideas, bug reports, and contributions are welcome.
+→ [Read the project brief](https://github.com/nimeshbuilds/.github/blob/main/projects/cluster-replica.md) · [Share your cluster-testing pain points](https://github.com/nimeshbuilds/.github/discussions/categories/ideas)
+
+## What you'll find here
+
+| Area | Problems we want to solve |
+| --- | --- |
+| Kubernetes & platform engineering | Reproducible development environments, integration testing, and operator setup. |
+| AI agents & automation | Useful coordination, evaluation, and repeatable developer workflows. |
+| Developer tools | Small tools that remove everyday setup and maintenance work. |
+
+## Build with me
+
+- **Have a real problem?** Start an [Ideas discussion](https://github.com/nimeshbuilds/.github/discussions/categories/ideas) with the workflow, what hurts, and what you've tried.
+- **Want to contribute?** Review a design, improve the docs, or pick a scoped task from the [community issues](https://github.com/nimeshbuilds/.github/issues).
+- **Want updates?** Follow [@nimeshbuilds](https://github.com/nimeshbuilds) and watch the [Announcements](https://github.com/nimeshbuilds/.github/discussions/categories/announcements). Star individual projects when they're useful to you.
+
+AI helps with the work. Maintainers remain responsible for review, evidence, and what ships.
+
+---
+
+[Contribution guide](https://github.com/nimeshbuilds/.github/blob/main/CONTRIBUTING.md) · [Community standards](https://github.com/nimeshbuilds/.github/blob/main/CODE_OF_CONDUCT.md) · [Get help](https://github.com/nimeshbuilds/.github/blob/main/SUPPORT.md) · [Report a vulnerability](https://github.com/nimeshbuilds/.github/blob/main/SECURITY.md)

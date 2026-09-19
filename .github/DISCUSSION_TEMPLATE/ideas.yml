@@ -1,0 +1,21 @@
+title: "[Idea] "
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: What workflow is painful today?
+      description: Describe who encounters the problem and a concrete example. Remove private data.
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Existing tools, scripts, or workarounds, and what is still missing.
+  - type: textarea
+    id: success
+    attributes:
+      label: What would success look like?
+      description: A result we could demonstrate or measure.
+    validations:
+      required: true

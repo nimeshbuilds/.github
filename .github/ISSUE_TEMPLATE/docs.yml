@@ -1,0 +1,17 @@
+name: Documentation improvement
+description: Fix a confusing explanation, broken link, or missing example.
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Which page or file?
+      description: Link to the page or give its repository path.
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What should improve?
+      description: Explain what was unclear or incorrect and what would help.
+    validations:
+      required: true

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">Nimesh Builds — build useful things in public</title><desc id="desc">Open-source Kubernetes tools, AI agents, and developer automation. github.com/nimeshbuilds</desc>
+<defs>
+  <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#203047" stroke-width="1"/></pattern>
+</defs>
+<rect width="1280" height="640" fill="#0C121C"/>
+<rect x="830" width="450" height="640" fill="url(#grid)" opacity=".48"/>
+<rect x="40" y="40" width="1200" height="560" rx="22" fill="none" stroke="#26364B" stroke-width="2"/>
+<path d="M72 598H346" stroke="#FFC342" stroke-width="4"/>
+<g transform="translate(76 151) scale(1.03)">
+    <path d="M10 50 58 23 105 48 58 75Z" fill="#48A6FF"/>
+    <path d="M10 50 58 75 58 257 10 230Z" fill="#2558EE"/>
+    <path d="M58 75 105 48 105 230 58 257Z" fill="#1945C7"/>
+    <path d="M161 86 204 61 250 87 206 112Z" fill="#42ECC1"/>
+    <path d="M161 86 206 112 206 268 161 242Z" fill="#12B992"/>
+    <path d="M206 112 250 87 250 242 206 268Z" fill="#087F70"/>
+    <path d="M58 75 105 48 206 182 161 211Z" fill="#FFC72F"/>
+    <path d="M58 75 161 211 206 268 206 216 105 80Z" fill="#FF9D1B"/>
+    <path d="M161 211 206 182 206 216 206 268Z" fill="#F6B720"/>
+    <path d="M238 0C242 23 248 30 272 36C248 42 242 49 238 72C233 49 227 42 204 36C227 30 233 23 238 0Z" fill="#FFC342"/>
+  </g>
+<g font-family="Arial, Helvetica, sans-serif">
+  <text x="412" y="150" fill="#42D5B3" font-size="17" font-weight="700" letter-spacing="3">OPEN SOURCE · BUILT IN PUBLIC</text>
+  <text x="406" y="250" fill="#F2F6FC" font-size="82" font-weight="800" letter-spacing="-2.5">NIMESH BUILDS</text>
+  <text x="412" y="315" fill="#C6D3E5" font-size="31">Less setup. More building.</text>
+  <path d="M412 361H1168" stroke="#26364B" stroke-width="2"/>
+  <text x="412" y="411" fill="#A4B7D1" font-size="25">Kubernetes · AI agents · Developer tools</text>
+  <text x="412" y="509" fill="#F2F6FC" font-size="23" font-weight="700">github.com/nimeshbuilds</text>
+  <path d="M1130 493H1154M1144 483 1154 493 1144 503" fill="none" stroke="#FFC342" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

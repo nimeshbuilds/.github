@@ -1,0 +1,27 @@
+name: Feature or design proposal
+description: Propose a specific improvement and the problem it would solve.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem needs solving?
+      description: Who encounters it, in what workflow, and how often?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a useful outcome look like?
+      description: Describe the behavior or acceptance criteria, not just a technology choice.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What have you tried?
+      description: Existing tools, workarounds, or related issues and discussions.
+  - type: textarea
+    id: contribution
+    attributes:
+      label: How could you help validate it?
+      description: Optional examples, design feedback, documentation, or implementation help.

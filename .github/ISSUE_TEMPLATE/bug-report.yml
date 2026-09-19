@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible problem in this repository.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for a reproducible problem. For a security vulnerability, follow SECURITY.md instead. Remove secrets and private data from all examples.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Include a minimal example or exact page and steps.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Versions and environment
+      description: Include relevant versions, browser/OS, or Kubernetes/runtime versions. Use N/A when not applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Optional sanitized logs, screenshots, or a workaround.

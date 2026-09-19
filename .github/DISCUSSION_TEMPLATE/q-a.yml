@@ -1,0 +1,13 @@
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do?
+      description: Name the project or page and describe your question.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: What have you tried or read?
+      description: Include relevant versions and sanitized examples. Never post credentials or a full kubeconfig.
