@@ -10,24 +10,22 @@ I'm [Nimesh](https://github.com/npandeya). Nimesh Builds is where I build useful
 
 [Explore the roadmap](https://github.com/nimeshbuilds/.github/blob/main/ROADMAP.md) · [Join the community](https://github.com/orgs/nimeshbuilds/discussions) · [Contribute](https://github.com/nimeshbuilds/.github/blob/main/CONTRIBUTING.md)
 
-## First project: ClusterReplica
+## Replicove: Kubernetes replica environments
 
-**Recreate the Kubernetes toolset you need in an ephemeral vCluster.**
+<img src="https://raw.githubusercontent.com/nimeshbuilds/replicove/main/assets/brand/replicove-icon.png" alt="Replicove Kubernetes replica operator" width="80">
 
-Integration tests need more than an empty cluster. They need the operators, configuration, and dependencies your application actually uses.
+**Your cluster’s tools. A fresh place to test.**
 
-ClusterReplica is an experimental Kubernetes operator that wraps [vCluster](https://www.vcluster.com/) to make that setup easier. The goal: request a development cluster with one custom resource, select what to reproduce from the host, customize it, and let it expire when the work is done.
+[Replicove](https://github.com/nimeshbuilds/replicove) is an open-source Kubernetes operator for disposable integration environments powered by [vCluster](https://www.vcluster.com/). Select the operators, Helm components, configuration, and explicitly granted secrets your application needs, customize the selection, and request a replica with a Kubernetes manifest.
 
-The proposed workflow covers:
+- **Provision:** install Replicove with one Helm command, then create new vClusters on demand or use an explicitly registered existing guest.
+- **Reproduce:** apply selected components with namespace mappings, overrides, dependency planning, and optional plan approval.
+- **Connect:** issue temporary guest credentials for developers, CI, and agents.
+- **Clean up:** expire replicas with a TTL and verify cleanup of recorded resources while preserving sources and independently managed runtimes.
 
-- **Provision:** create a vCluster or use an explicitly selected existing one.
-- **Reproduce:** install supported operators and selected configuration, with overrides.
-- **Connect:** provide scoped access for developers, CI jobs, and agents.
-- **Clean up:** expire the environment with a TTL and track deletion of owned resources.
+**Status: experimental alpha.** The [v0.1.0-alpha.1 release](https://github.com/nimeshbuilds/replicove/releases/tag/v0.1.0-alpha.1) includes public amd64/arm64 operator images, an OCI Helm chart, native YAML, and macOS/Linux CLI downloads. Disposable-cluster tests cover the new/existing vCluster paths and small cert-manager, Spark, Trino, and admission-policy scenarios. Production certification, cloud identity, and source volume data restoration remain future work.
 
-**Status: early runtime prototype.** The [public repository](https://github.com/nimeshbuilds/cluster-replica) contains a Go operator, namespaced CRD, pinned vCluster Helm adapter, TTL release cleanup, tests, and the full implementation plan. Automatic host toolset replication and complete owned-data cleanup are upcoming. There is no production release or certified compatibility matrix yet.
-
-→ [Explore the code](https://github.com/nimeshbuilds/cluster-replica) · [Read the project brief](https://github.com/nimeshbuilds/.github/blob/main/projects/cluster-replica.md) · [Share your cluster-testing pain points](https://github.com/nimeshbuilds/.github/discussions/categories/ideas)
+→ [Install with Helm](https://nimeshbuilds.github.io/replicove/getting-started/helm/) · [Developer documentation](https://nimeshbuilds.github.io/replicove/) · [Explore the code](https://github.com/nimeshbuilds/replicove)
 
 ## What you'll find here
 
